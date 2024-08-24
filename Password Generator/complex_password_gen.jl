@@ -16,6 +16,8 @@ function generate_password(length::Int)
     return join(shuffle(password))
 end
 
+println("Welcome to the Complex Password Generator!")
+
 function get_password_length()
     while true
         println("Enter the desired password length (minimum 8): ")
@@ -28,5 +30,4 @@ function get_password_length()
     end
 end
 password_length = get_password_length()
-println("Welcome to the Complex Password Generator!")
 println("Generated password: ", generate_password(password_length))
